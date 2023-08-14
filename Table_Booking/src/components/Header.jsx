@@ -22,7 +22,7 @@ function Header() {
                 </ul>
                 <button className='bg-primary text-white p-2 rounded-full'>Book a Table</button>
             </div>
-            <div className='flex flex-col py-5 px-3 fixed  md:hidden w-full bg-white'>
+            <div className='flex flex-col py-5 px-3 fixed  md:hidden w-full bg-white z-9'>
                 <div className='flex flex-row justify-between'>
                     <div className='text-2xl font-bold'>Yummy</div>
                     <div onClick={() => setMenu(!menu)} >
@@ -32,7 +32,7 @@ function Header() {
                 {
                     menu &&
                     (
-                        <ul className='grid grid-cols-1 place-items-center space-y-2 text-2xl p-5 cursor-pointer'>
+                        <ul className='grid grid-cols-1 place-items-center space-y-2 text-2xl p-5 cursor-pointer z-9'>
                             <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'>Home</li>
                             <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'>About</li>
                             <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'>Menu</li>

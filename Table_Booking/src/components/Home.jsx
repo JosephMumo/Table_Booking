@@ -1,11 +1,13 @@
 import React from 'react'
 import {BsPlayCircle} from 'react-icons/bs'
 import food from '../images/pic1.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Home() {
     return ( 
         <div className='flex flex-col py-8 md:py-0 md:flex-row bg-gray-200 items-center min-h-screen'>
-            <div className='w-full p-10 md:w-1/2 md:px-20'>
+            <div className='w-full p-10 md:w-1/2 md:px-20' data-aos='fade-up'>
                 <h1 className='text-5xl font-thin'>EJOY YOUR HEALTHY <br />DELICIOUS FOOD</h1>
                 <br />
                 <p className='mt-3'>Indulge in Culinary Delights at Our Exquisite Restaurant <br />Where Every Bite Tells a Flavorful Story!</p>
@@ -17,7 +19,7 @@ function Home() {
                     </section>
                 </div>
             </div>
-            <div className='w-full md:w-1/2 p-8 grid place-items-center'>
+            <div className='w-full md:w-1/2 p-8 grid place-items-center' data-aos='flip-left'>
                 <img src={food} className='w-3/4 rounded-full' />
             </div>
         </div>
