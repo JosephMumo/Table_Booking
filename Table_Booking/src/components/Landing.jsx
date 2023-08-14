@@ -1,14 +1,11 @@
 import React, { useEffect } from 'react'
 import plate from '../images/pic2.jpg'
 import { PiDotsThreeOutlineFill } from 'react-icons/pi'
-import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 function Landing() {
 
-    useEffect(() => {
-        AOS.init( {duration: 2000})
-    }, [])
+    
     return ( 
         <div className='flex flex-col justify-between'>
             <div className='flex flex-col md:flex-row w-full min-h-screen bg-white text-black items-center'>
