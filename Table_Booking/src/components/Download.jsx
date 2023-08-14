@@ -2,11 +2,12 @@ import React from 'react'
 import { AiFillApple } from 'react-icons/ai'
 import { BiLogoPlayStore } from 'react-icons/bi'
 import pic from '../images/app.png'
+import 'aos/dist/aos.css'
 
 function Download() {
     return ( 
         <div className='w-full flex flex-col md:flex-row min-h-screen p-8 place-items-center'>
-            <div className='w-full md:w-1/2  p-8 md:p-16'>
+            <div className='w-full md:w-1/2  p-8 md:p-16' data-aos='fade-up'>
                 <h5 className='text-base font-semibold text-primary'>App Download</h5>
                 <br />
                 <h1 className='text-2xl font-bold'>Download our apps <br />for quick delivery</h1>
