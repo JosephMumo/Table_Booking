@@ -1,12 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { HiMenu } from 'react-icons/hi'
 import { MdOutlineClose } from 'react-icons/md'
 
 function Header() {
     const [menu, setMenu ] = useState(false)
+    const [scrolling, setScrolling] = useState(false)
+
+    useEffect(() => {
+        function handleScroll() {
+            if(Window.scrollY > 0) {
+                setScrolling(true)
+            }else {
+                setScrolling(false)
+            }
+        }
+        window.addEventListener('scroll', handleScroll)
+
+        return(
+            window.removeEventListener('scroll', handleScroll)
+        )
+    }, [])
     return ( 
         <>
-            <div className='hidden md:flex flex-row justify-between p-5 items-center sticky z-50'>
+            <div className={`hidden md:flex flex-row justify-between p-5 items-center fixed shadow-md z-50 w-full ${scrolling ? 'bg-black' : 'bg-white'} `}>
                 <div className="text-2xl font-bold">
                     <h1>Yummy</h1>
                 </div>
@@ -22,7 +38,7 @@ function Header() {
                 </ul>
                 <button className='bg-primary text-white p-2 rounded-full'>Book a Table</button>
             </div>
-            <div className='flex flex-col py-5 px-3 fixed  md:hidden w-full bg-white z-9'>
+            <div className='flex flex-col py-5 px-3 fixed md:hidden w-full bg-white z-50 shadow-sm'>
                 <div className='flex flex-row justify-between'>
                     <div className='text-2xl font-bold'>Yummy</div>
                     <div onClick={() => setMenu(!menu)} >

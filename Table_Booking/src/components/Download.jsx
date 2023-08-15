@@ -34,7 +34,7 @@ function Download() {
                     </section>
                 </div>
             </div>
-            <div className='w-full md:w-1/2 '>
+            <div className='w-full md:w-1/2'>
                 <img src={pic} alt='1' />
             </div>
         </div>

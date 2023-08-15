@@ -4,6 +4,7 @@ import lc from '../images/lunch.jpg'
 import sl from '../images/salad.jpg'
 import dss from '../images/sweet.jpg'
 import Card  from './Card'
+import 'aos/dist/aos.css'
 
 
 function Specialty() {
@@ -34,7 +35,7 @@ function Specialty() {
         <div className='p-10 text-center  place-items-center'>
             <h1 className='text-primary text-3xl font-bold'>Our Specialties</h1>
             <p className='mt-3'>Breakfast brunch, lunch and afternoon snacks. We are here to provide you with delicious foods</p>
-            <div className='flex flex-col justify-between'>
+            <div className='flex flex-col justify-between' data-aos='fade-up'>
                 <div className='grid grid-cols-1 py-10 mt-10 md:grid-cols-2 lg:grid-cols-4'>
                     { Data.map(item => {
                         return (<Card 

@@ -4,6 +4,7 @@ import p2 from '../images/p2.jpg'
 import p3 from '../images/p3.jpg'
 import Box from './Box'
 
+
 function Clients() {
     const foodies = [
         {
