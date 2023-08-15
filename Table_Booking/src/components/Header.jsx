@@ -4,25 +4,9 @@ import { MdOutlineClose } from 'react-icons/md'
 
 function Header() {
     const [menu, setMenu ] = useState(false)
-    const [scrolling, setScrolling] = useState(false)
-
-    useEffect(() => {
-        function handleScroll() {
-            if(Window.scrollY > 0) {
-                setScrolling(true)
-            }else {
-                setScrolling(false)
-            }
-        }
-        window.addEventListener('scroll', handleScroll)
-
-        return(
-            window.removeEventListener('scroll', handleScroll)
-        )
-    }, [])
     return ( 
         <>
-            <div className={`hidden md:flex flex-row justify-between p-5 items-center fixed shadow-md z-50 w-full ${scrolling ? 'bg-black' : 'bg-white'} `}>
+            <div className='hidden md:flex flex-row justify-between p-5 items-center fixed shadow-md z-50 w-full bg-white'>
                 <div className="text-2xl font-bold">
                     <h1>Yummy</h1>
                 </div>
