@@ -28,14 +28,19 @@ function AppContextProvider({children}) {
     }
     function handleSubmit(event) {
         event.preventDefault()
-        setBook(prev => {
-            return([...prev, book])
-        })
-        console.log(book)
+        setBook(info)
+        alert('Your Booking has been successfully added!!')
         setInfo({
             date:"",time:"",people:""
         })
     }
+    useEffect(() => {
+        localStorage.setItem('newBooking', JSON.stringify(book))
+    }, [book])
+
+    const bookingInfo = JSON.parse(localStorage.getItem('newBooking'))
+    console.log(bookingInfo)
+    console.log(localStorage)
     return(
         <myContext.Provider value={{handleChange, handleSubmit, info, book, setBook, setInfo}}>
             {children}
