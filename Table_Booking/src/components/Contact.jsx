@@ -1,10 +1,14 @@
 import React from 'react'
+import Footer from './Footer';
 
 function Contact() {
     return ( 
-        <div>
-            <h1 className="text-center">Contact</h1><br/>
-        </div>
+        <>
+            <div className='min-h-screen'>
+                <h1 className="text-center">About</h1>
+            </div>
+            <Footer />
+        </>
      );
 }
 

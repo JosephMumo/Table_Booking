@@ -12,8 +12,8 @@ function Header() {
                     <h1>Yummy</h1>
                 </div>
                 <ul className="flex flex-row space-x-3 text-lg cursor-pointer font-semibold">
-                        <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/'>Home</Link></li>
-                        <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/about'>About</Link></li>
+                        <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary visited:border-b-[3px]'><Link to='/'>Home</Link></li>
+                        <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary visited:border-b-[3px]'><Link to='/about'>About</Link></li>
                         <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/menu'>Menu</Link></li>
                         <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/event'>Events</Link></li>
                         <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/chefs'>Chefs</Link></li>
