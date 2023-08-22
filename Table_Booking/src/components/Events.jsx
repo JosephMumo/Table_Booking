@@ -4,8 +4,10 @@ import Footer from './Footer';
 function Events() {
     return ( 
         <>
-            <div className='min-h-screen'>
-            <iframe className='w-full min-h-screen' src="https://www.youtube.com/embed/e86MgDWX8ag" title="Songs that makes you feel positive when you listen to it" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div className='min-h-screen w-full p-8 text-center'>
+                <h1 className="text-base text-black">Events</h1>
+                <br />
+                <h1 className='text-3xl text-black mt-2'>Share <span className='text-primary'>Your Moments</span> in Our Restaurant</h1>
             </div>
             <Footer />
         </>
