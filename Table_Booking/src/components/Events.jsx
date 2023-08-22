@@ -5,7 +5,7 @@ function Events() {
     return ( 
         <>
             <div className='min-h-screen'>
-                <h1 className="text-center">Events</h1>
+            <iframe className='w-full min-h-screen' src="https://www.youtube.com/embed/e86MgDWX8ag" title="Songs that makes you feel positive when you listen to it" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <Footer />
         </>

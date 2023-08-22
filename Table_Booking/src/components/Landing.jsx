@@ -19,7 +19,7 @@ function Landing() {
                     <br />
                     <p>We offer you the most delicious healthy dishes that do not distinguish them from unhealthy food. Under the supervision of the most important chefs specialized<br />in healthy food. Our motto is good food for good health.</p>
                     <br />
-                    <button className='bg-primary text-white p-3 rounded-full'>Eplore our store</button>
+                    <button className='bg-primary text-white p-3 rounded-full'>Explore our Store</button>
                 </div>
             </div>
             <div className='flex justify-center w-full text-primary'>
