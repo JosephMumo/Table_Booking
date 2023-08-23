@@ -20,7 +20,7 @@ function Header() {
                         <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/gallery'>Gallery</Link></li>
                         <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/contact'>Contact</Link></li>   
                 </ul>
-                <button className='bg-primary text-white p-2 rounded-full'>Book a Table</button>
+                <button className='bg-primary text-white p-2 rounded-full'><a href='#booking'>Book a Table</a></button>
             </div>
             <div className='flex flex-col py-5 px-3 fixed md:hidden w-full bg-white z-50 shadow-sm'>
                 <div className='flex flex-row justify-between'>

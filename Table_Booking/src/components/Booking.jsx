@@ -8,7 +8,7 @@ function Booking() {
     const {handleChange, handleSubmit, info} = useContext(myContext)
     
     return ( 
-        <div className='text-center mt-5 p-8 min-h-screen'>
+        <div className='text-center mt-5 p-8 min-h-screen' id='booking'>
             <h3 className='text-primary mb-2 text-xl'>Advanced Booking</h3>
             <h1 className='text-3xl font-bold'>Reserve a Table</h1>
             <br />
