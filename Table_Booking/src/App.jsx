@@ -4,7 +4,6 @@ import About from './components/About';
 import Menu from './components/Menu';
 import Events from './components/Events';
 import Chefs from './components/Chefs';
-import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Home from './components/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -19,7 +18,6 @@ function App() {
                 <Route path='/menu' element={<Menu />}></Route>
                 <Route path='/event' element={<Events />}></Route>
                 <Route path='/chefs' element={<Chefs />}></Route>
-                <Route path='/gallery' element={<Gallery />}></Route>
                 <Route path='/contact' element={<Contact />}></Route>
             </Routes>
         </div>

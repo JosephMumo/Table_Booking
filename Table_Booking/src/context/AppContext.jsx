@@ -24,7 +24,6 @@ function AppContextProvider({children}) {
             }
             )
         })
-        console.log(info)
     }
     function handleSubmit(event) {
         event.preventDefault()
@@ -39,8 +38,6 @@ function AppContextProvider({children}) {
     }, [book])
 
     const bookingInfo = JSON.parse(localStorage.getItem('newBooking'))
-    console.log(bookingInfo)
-    console.log(localStorage)
     return(
         <myContext.Provider value={{handleChange, handleSubmit, info, book, setBook, setInfo}}>
             {children}

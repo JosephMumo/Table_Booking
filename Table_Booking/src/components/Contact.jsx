@@ -23,6 +23,10 @@ function Contact() {
     const handleSubmit =(e) => {
         e.preventDefault()
         setData(Udata)
+        alert('Your message has send successfully!!')
+        setUdata({
+            fname:'', email:'', subject: '', message: ''
+        })
         
     }
     useEffect(() => {
@@ -67,11 +71,11 @@ function Contact() {
                 <div className='w-full grid place-items-center'>
                     <form className='py-5 w-3/4 flex flex-col space-y-2 items-center' onSubmit={handleSubmit}>
                         <section className='w-full flex justify-between'>
-                            <input type='text' value={Udata.fname} placeholder='Your Name' name='fname'   onClick={handleChange} className='w-1/2 h-10 bg-slate-50 px-2 outline-none' />
-                            <input type="email" value={Udata.email} placeholder='Your Email' name='email' onClick={handleChange} className='w-1/2 h-10 bg-slate-50 px-2 outline-none' />
+                            <input type='text' value={Udata.fname} placeholder='Your Name' name='fname'   onChange={handleChange} className='w-1/2 h-10 bg-slate-50 px-2 outline-none' />
+                            <input type="email" value={Udata.email} placeholder='Your Email' name='email' onChange={handleChange} className='w-1/2 h-10 bg-slate-50 px-2 outline-none' />
                         </section>
-                        <input type="text" value={Udata.subject} placeholder='Subject' name='subject'    onClick={handleChange} className='h-10 bg-slate-50 w-full px-2 outline-none'/>
-                        <textarea placeholder='Message' type='text' value={Udata.message} name='message' onClick={handleChange} className='bg-slate-50 p-2 outline-none w-full ' />
+                        <input type="text" value={Udata.subject} placeholder='Subject' name='subject'    onChange={handleChange} className='h-10 bg-slate-50 w-full px-2 outline-none'/>
+                        <textarea placeholder='Message' type='text' value={Udata.message} name='message' onChange={handleChange} className='bg-slate-50 p-2 outline-none w-full ' />
                         <br />
                         <button className='bg-primary p-2 rounded-full w-56 mb-5 text-white'>Send message</button>
                     </form>
