@@ -13,7 +13,7 @@ function Contact() {
                 <h1 className='text-3xl font-light mt-3 '>Need help?<span className='text-primary'>Contact Us</span></h1>
                 <br />
                 <div className='grid grid-cols-1 md:grid-cols-2  space-x-2 space-y-2 w-3/4'>
-                    <section className=' flex bg-slate-50 p-2 text-start items-center space-x-3'>
+                    <section className=' flex bg-slate-50 p-3 text-start items-center space-x-3'>
                         <HiOutlineLocationMarker size='3em'  className='bg-primary rounded-full p-2' style={{color:'#fff'}} />
                         <div className=' flex flex-col'>
                             <h4 className='text-lg font-semibold'>Our Address</h4>

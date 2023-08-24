@@ -28,9 +28,9 @@ function Chefs() {
     ]
     return ( 
         <>
-            <div className='min-h-screen'>
+            <div className='min-h-screen '>
                 <h1 className="text-center">Chefs</h1>
-                <div className='flex flex-col md:flex-row justify-between mt-20 w-full px-5'>
+                <div className='flex flex-col md:flex-row justify-between  mt-20 w-full px-5'>
                     { CData.map(item => {
                         return (
                             <Boxe
