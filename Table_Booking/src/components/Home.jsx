@@ -20,7 +20,7 @@ function Home() {
                     <div className='flex flex-row items-center space-x-9 mt-10'>
                         <button className='bg-primary p-2 px-3 rounded-full text-white'><a href='#booking'>Book a Table</a></button>
                         <section className='flex flex-row space-x-2 items-center'>
-                            <BsPlayCircle color='red' size={26} />
+                            <button><a href='https://youtu.be/G-YVRQ-di3w'><BsPlayCircle color='red' size={26} /></a></button>
                             <p className='font-bold'>Watch Video</p>
                         </section>
                     </div>

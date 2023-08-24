@@ -17,7 +17,6 @@ function Header() {
                         <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/menu'>Menu</Link></li>
                         <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/event'>Events</Link></li>
                         <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/chefs'>Chefs</Link></li>
-                        <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/gallery'>Gallery</Link></li>
                         <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/contact'>Contact</Link></li>   
                 </ul>
                 <button className='bg-primary text-white p-2 rounded-full'><a href='#booking'>Book a Table</a></button>
@@ -38,7 +37,6 @@ function Header() {
                             <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/menu'>Menu</Link></li>
                             <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/event'>Events</Link></li>
                             <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/chefs'>Chefs</Link></li>
-                            <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/gallery'>Gallery</Link></li>
                             <li className='text-gray-500 transition-all ease-in duration-250 hover:text-black hover:border-b-[3px] border-primary'><Link to='/contact'>Contact</Link></li>
                         </ul>
                     )

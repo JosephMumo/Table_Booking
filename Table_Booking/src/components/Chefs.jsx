@@ -28,9 +28,11 @@ function Chefs() {
     ]
     return ( 
         <>
-            <div className='min-h-screen '>
+            <div className='min-h-screen py-8'>
                 <h1 className="text-center">Chefs</h1>
-                <div className='flex flex-col md:flex-row justify-between  mt-20 w-full px-5'>
+                <br />
+                <h2 className='text-3xl text-black font-light mt-5 text-center'>Our <span className='text-primary'>Proffesional</span> Chefs</h2>
+                <div className='flex flex-col md:flex-row justify-between   w-full px-5'>
                     { CData.map(item => {
                         return (
                             <Boxe
